@@ -1,7 +1,17 @@
 # Backend HH Test
 
-Бэк написан с помощью: NestJS, TypeORM (MySQL)
-Используемые пакеты: bcryptjs, class-transformer, class-validator, cross-env, jsonwebtoken, multer, sharp
+Бэк написан с помощью:
+- NestJS
+- TypeORM (MySQL)
+
+Используемые пакеты:
+- bcryptjs
+- class-transformer
+- class-validator
+- cross-env
+- jsonwebtoken
+- multer
+- sharp
 
 
 Первоночальная настройка:
