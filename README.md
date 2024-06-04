@@ -16,18 +16,18 @@
 
 Первоночальная настройка:
 
-1. В терминале: npm i
+1. В терминале: ```npm i```
 1. В .production.env изменить 'db_mysql_database' (и/или другие данные от базы данных, которые необходимы)
 2. В .production.env изменить 'jwt_privatekey' и 'jwt_accessprivatekey'
 3. Создать базу данных с написанном ранее 'db_mysql_database' названием
-4. В терминале: npm run migration:generate migrations/your_migration_name
-5. В терминале: npm run migration:run. В случае ошибки и/или не инициализации таблиц проверить, правильно ли создался файл миграции (он необходим в папке migrations)
+4. В терминале: ```npm run migration:generate migrations/your_migration_name```
+5. В терминале: ```npm run migration:run```. В случае ошибки и/или не инициализации таблиц проверить, правильно ли создался файл миграции (он необходим в папке migrations)
 
 
 
 Запуск:
-- development mode: npm run start:dev (необходим файл .development.env аналогичный .production.env)
-- production mode: npm run start
+- development mode: ```npm run start:dev``` (необходим файл .development.env аналогичный .production.env)
+- production mode: ```npm run start```
 
 
 Тестов нет =)
@@ -50,7 +50,6 @@ JWT:
 
 - POST /user/register - регистрация пользователя. Доступные параметры: name: string (length 4-32), email: string, password: string (length 6-64)
 - POST /user/login - аутентификация пользователя. Доступные параметры: name: string (length 4-32), password: string (length 6-64)
-
 
 
 Варианты возврата:
