@@ -32,18 +32,19 @@ JWT:
 
 
 Дока:
-GET /user/profile/:id - получение пользователя по его ID
-GET /user/profiles - получение списка пользователей. Параметры: page: number (номер страницы), take: number (сколько пользователей показывать на странице)
+- GET /user/profile/:id - получение пользователя по его ID
+- GET /user/profiles - получение списка пользователей. Параметры: page: number (номер страницы), take: number (сколько пользователей показывать на странице)
 
-PUT /user/profile - изменения пользователя (необходимы токены авторизации JWT). Доступные параметры: name: string (length 4-32), email: string, gender: number (0/1)
-PUT /user/profile/photo - изменение фото пользователя (необходимы токены авторизации JWT). Доступные параметры: photo: File. (form-data)
+- PUT /user/profile - изменения пользователя (необходимы токены авторизации JWT). Доступные параметры: name: string (length 4-32), email: string, gender: number (0/1)
+- PUT /user/profile/photo - изменение фото пользователя (необходимы токены авторизации JWT). Доступные параметры: photo: File. (form-data)
 
-POST /user/register - регистрация пользователя. Доступные параметры: name: string (length 4-32), email: string, password: string (length 6-64)
-POST /user/login - аутентификация пользователя. Доступные параметры: name: string (length 4-32), password: string (length 6-64)
+- POST /user/register - регистрация пользователя. Доступные параметры: name: string (length 4-32), email: string, password: string (length 6-64)
+- POST /user/login - аутентификация пользователя. Доступные параметры: name: string (length 4-32), password: string (length 6-64)
 
 
 
 Варианты возврата:
+
 
 { // success
     statusCode: HttpStatusCode
