@@ -45,7 +45,7 @@ JWT:
 
 Варианты возврата:
 
-
+```typescript
 { // success
     statusCode: HttpStatusCode
     result: any
@@ -55,3 +55,4 @@ JWT:
     error: string
     message: string
 }
+```
